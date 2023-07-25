@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color: rgb(19, 19, 119);
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    position: fixed;
+}
+header h3{
+    width: 20vw;
+}
+ul{
+
+    justify-content: right;
+    list-style-type: none;
+    display: flex;
+    width: 80vw;
+    gap: 40px;
+    padding-right: 50px;
+    flex-wrap: wrap;
+}
+li{
+
+    padding: 5px;
+    color: rgb(11, 194, 194);
+    font-weight: bold;
+}
+li:hover{
+
+    background-color: var(--color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.main1{
+    background-color: rgb(65, 215, 215);
+    text-align: center ;
+    padding: 60px;
+    color: whitesmoke;
+    padding-top: 150px;
+}
+.main1 img{
+    width:150px;
+}
+.main1 p ,.main1 h1{
+    padding: 20px;
+}
+.main1 h5{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.main2{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.main2 div{
+    width: 30%;
+    min-width: 300px;
+}
+h3{
+    color:var(--color);
+    padding: 10px 0px;
+}
+.main2 img{
+    width: 100%;
+}
+
+@media screen and (max-width:750px) {
+    ul{
+        gap: 5px;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+    li{
+        font-size: 0.8rem;
+    }
+    header h3{
+        width: 100vw;
+        text-align: center;
+    }
+
+    header {
+        padding: 0;
+        flex-direction: column;
+    }
+    ul{
+        padding: 0;
+    }
+}
