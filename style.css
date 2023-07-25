@@ -1,0 +1,8 @@
+
+a{
+    
+    background-image: linear-gradient(transparent calc(100% - 2px),currentColor 10px);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s
+}
